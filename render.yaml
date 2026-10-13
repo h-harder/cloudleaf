@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cloudleaf-browser
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: BROWSER_TOKEN
+        generateValue: true
